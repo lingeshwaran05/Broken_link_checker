@@ -1,15 +1,18 @@
 <script>
 import bg from './assets/7741849_3747371.jpg'
 import logo from './assets/ll.png'
-  import Card from './card.svelte';
-import card from './card.svelte'
+import About from './About.svelte';
+import Contact from './Contact.svelte';
+import Aboutus from './Aboutus.svelte';
+import Docs from './Docs.svelte';
 let url="Enter URL to check ";
 </script>
 
 <main>
  <nav> <ul>  
-    <li><a href="#about">About Us</a></li>
+    <li><a href="#aboutus">About Us</a></li>
     <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#docs">Docs</a></li>
     <li id="home"><a href="#MAIN"><img src={logo} width="20" alt=""> Link Checker</a></li>
   </ul>
@@ -33,14 +36,32 @@ let url="Enter URL to check ";
 <br>
 <br>
 <section id="about">
-  <Card/>
+  <About/>
 </section>
 <br>
 <br>
 <br>
+
+<section id="docs">
+  <Docs/>
+</section>
+<br>
+<br>
+<br>
+
+<section id="aboutus">
+  <Aboutus/>
+</section>
+<br>
+<br>
+<br>
+
 <section id="contact">
-<Card/>
-</section>
+  <Contact/>
+ </section>
+ <br>
+ <br>
+ <br>
 <footer>
   <p class="cp-text">
     © Copyright 2023 linkchecker. All rights reserved.
