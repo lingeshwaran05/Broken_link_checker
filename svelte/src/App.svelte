@@ -5,7 +5,9 @@ import About from './About.svelte';
 import Contact from './Contact.svelte';
 import Aboutus from './Aboutus.svelte';
 import Docs from './Docs.svelte';
-let url="Enter URL to check ";
+import {output} from './output';
+let siteURL="Enter URL to check ";
+
 </script>
 
 <main>
@@ -23,11 +25,13 @@ let url="Enter URL to check ";
   <img src={bg} alt="" class="center">
 </div>
 <div class="url">
-  <input type="text" class="center" bind:value={url}>
+  <input type="text" class="center" bind:value={siteURL}>
 </div>
 <br>
-<p class="center" id="display">Website URL : 👉   {url}</p>
+<p class="center" id="display">Website URL : 👉   {siteURL}</p>
 <br>
+
+<input type="text" class="center" value={output} readonly>
 <br>
 <button>Submit</button>
 
