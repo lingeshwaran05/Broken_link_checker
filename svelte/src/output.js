@@ -1,4 +1,19 @@
-//const execSync = require('child_process').execSync;
-//const output = execSync('blc --verbose https://github.com/stevenvachon/broken-link-checker', { encoding: 'utf-8' });
-const output = "execSync('os.freemem()', { encoding: 'utf-8' });"
-export { output };
+const { exec } = require('child_process');
+var output;
+
+const url = 'https://www.figma.com';
+
+exec(`npx linkinator ${url} --verbose`, (error, stdout, stderr) => {
+    if (error) {
+        console.error(`exec error: ${error}`);
+        return;
+    }
+    output = stdout;
+    // const output = stdout.toString();
+    // const brokenLinks = output.match(/Broken\sLinks:\n(.*)/);
+    // const json = { output, brokenLinks };
+    // fs.writeFileSync('output.json', JSON.stringify(json));
+
+});
+var im = 20;
+export { im };
