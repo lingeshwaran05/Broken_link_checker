@@ -15,5 +15,5 @@ exec(`npx linkinator ${url} --verbose`, (error, stdout, stderr) => {
     // fs.writeFileSync('output.json', JSON.stringify(json));
 
 });
-var im = 20;
-export { im };
+
+export { output };
