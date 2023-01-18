@@ -36,6 +36,7 @@ let siteURL="Enter URL to check ";
 <button>Submit</button>
 
 </section>
+<p>output</p>
 <br>
 <br>
 <br>
