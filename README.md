@@ -30,4 +30,4 @@ npm install
 npm run dev
 ```
 
-It will lauch in the local host with 5500 port and view the front end of the project
+It will lauch in the local host with 5173 port and view the front end of the project
