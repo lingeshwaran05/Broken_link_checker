@@ -5,7 +5,7 @@ import About from './About.svelte';
 import Contact from './Contact.svelte';
 import Aboutus from './Aboutus.svelte';
 import Docs from './Docs.svelte';
-//import { im } from './output';
+//import { output } from './output';
 
 let siteURL="Enter URL to check ";
 
@@ -32,7 +32,7 @@ let siteURL="Enter URL to check ";
 <p class="center" id="display">Website URL : 👉  {siteURL} </p>
 <br>
 <br>
-<p></p>
+<p>{siteURL}</p>
 <button>Submit</button>
 
 </section>
